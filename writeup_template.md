@@ -1,4 +1,4 @@
-##Traffic Sign Recognition
+# Traffic Sign Recognition
 
 **Build a Traffic Sign Recognition Project**
 
@@ -202,8 +202,9 @@ Predicted sign: Keep right, probability: 1.000 correct: True
 |  5   |   17  | 0.0  |                      No entry                      |
 
 Predicted sign: Speed limit (60km/h), probability: 1.000 correct: True
+
 | Rank | Index |     Prob    |                    Label                     |
-|:----:|:-----:|:----:|:--------------------------------------------------:|
+|:----:|:-----:|:-----------:|:--------------------------------------------:|
 |  1   |   3   |   0.999998  |             Speed limit (60km/h)             |
 |  2   |   5   | 2.17723e 06 |             Speed limit (80km/h)             |
 |  3   |   2   | 2.00031e 08 |             Speed limit (50km/h)             |
@@ -211,8 +212,9 @@ Predicted sign: Speed limit (60km/h), probability: 1.000 correct: True
 |  5   |   6   | 3.62349e 28 |         End of speed limit (80km/h)          |
 
 Predicted sign: Children crossing, probability: 1.000 correct: True
+
 | Rank | Index |     Prob    |            Label             |
-|:----:|:-----:|:----:|:--------------------------------------------------:|
+|:----:|:-----:|:-----------:|:----------------------------:|
 |  1   |   28  |     1.0     |      Children crossing       |
 |  2   |   8   | 3.22192e 27 |    Speed limit (120km/h)     |
 |  3   |   35  | 3.61174e 28 |          Ahead only          |
@@ -220,8 +222,9 @@ Predicted sign: Children crossing, probability: 1.000 correct: True
 |  5   |   12  | 2.04654e 31 |        Priority road         |
 
 Predicted sign: No passing, probability: 1.000 correct: True
+
 | Rank | Index | Prob |                    Label                     |
-|:----:|:-----:|:----:|:--------------------------------------------------:|
+|:----:|:-----:|:----:|:--------------------------------------------:|
 |  1   |   9   | 1.0  |                  No passing                  |
 |  2   |   10  | 0.0  | No passing for vehicles over 3.5 metric tons |
 |  3   |   18  | 0.0  |               General caution                |
@@ -229,6 +232,7 @@ Predicted sign: No passing, probability: 1.000 correct: True
 |  5   |   16  | 0.0  |   Vehicles over 3.5 metric tons prohibited   |
 
 Predicted sign: Yield, probability: 1.000 correct: True
+
 | Rank | Index | Prob |                       Label                        |
 |:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   13  | 1.0  |                       Yield                        |
@@ -238,8 +242,9 @@ Predicted sign: Yield, probability: 1.000 correct: True
 |  5   |   17  | 0.0  |                      No entry                      |
 
 Predicted sign: Speed limit (70km/h), probability: 1.000 correct: True
+
 | Rank | Index |     Prob    |                 Label                 |
-|:----:|:-----:|:----:|:--------------------------------------------------:|
+|:----:|:-----:|:-----------:|:-------------------------------------:|
 |  1   |   4   |     1.0     |          Speed limit (70km/h)         |
 |  2   |   1   | 1.36683e 33 |          Speed limit (30km/h)         |
 |  3   |   0   |  4.3787e 34 |          Speed limit (20km/h)         |
