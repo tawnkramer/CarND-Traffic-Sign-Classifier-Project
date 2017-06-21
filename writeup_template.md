@@ -155,7 +155,7 @@ Here are some German traffic signs that I found on the web:
 
 ![alt text][image4]
 
-The first image might be difficult to classify because there are many signs with a triangular shape. The second sign is well represented in the test set, and probably not a challenge. The third image of the speed limit was close to the other speed limit signs. The fourth image of the children crossing has a lot of small detail that is mostly lost at this 32x32 resolution. And the final no passing sign has close to the fewest samples in the test set.
+The first image might be difficult to classify because there are many signs with a triangular shape. The second sign is well represented in the test set, and probably not a challenge. The third image of the speed limit was close to the other speed limit signs. The fourth image of the children crossing has a lot of small detail that is mostly lost at this 32x32 resolution. And the no passing sign has close to the fewest samples in the test set. Yield and 70 km/h were included for additinal verification.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -168,6 +168,8 @@ Here are the results of the prediction:
 | Speed limit (60km/h	| Speed limit (60km/h							|
 | Children crossing 	| Children crossing 			 				|
 | No passing			| No passing     	 							|
+| Yield					| Yield     	 								|
+| Speed limit (70 km.h)	| Speed limit (70 km.h)							|
 
 
 The model was able to correctly guess 7 of the 7 traffic signs, which gives an accuracy of 100%. Originally, the test images were cropped too closely and resulted in reduced accuracy of 57%. Once cropping changed to more closely match the test set, the network performed flawlessly on the small sample set.
@@ -180,80 +182,68 @@ The model quite sure of all the images and didn't indicate any hesitantacy.
 
 
 Predicted sign: General caution, probability: 1.000 correct: True
-+------+-------+------+----------------------------------------------------+
+
 | Rank | Index | Prob |                       Label                        |
-+------+-------+------+----------------------------------------------------+
+|:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   18  | 1.0  |                  General caution                   |
 |  2   |   42  | 0.0  | End of no passing by vehicles over 3.5 metric tons |
 |  3   |   10  | 0.0  |    No passing for vehicles over 3.5 metric tons    |
 |  4   |   17  | 0.0  |                      No entry                      |
 |  5   |   16  | 0.0  |      Vehicles over 3.5 metric tons prohibited      |
-+------+-------+------+----------------------------------------------------+
 
 Predicted sign: Keep right, probability: 1.000 correct: True
-+------+-------+------+----------------------------------------------------+
+
 | Rank | Index | Prob |                       Label                        |
-+------+-------+------+----------------------------------------------------+
+|:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   38  | 1.0  |                     Keep right                     |
 |  2   |   42  | 0.0  | End of no passing by vehicles over 3.5 metric tons |
 |  3   |   10  | 0.0  |    No passing for vehicles over 3.5 metric tons    |
 |  4   |   18  | 0.0  |                  General caution                   |
 |  5   |   17  | 0.0  |                      No entry                      |
-+------+-------+------+----------------------------------------------------+
 
 Predicted sign: Speed limit (60km/h), probability: 1.000 correct: True
-+------+-------+-------------+----------------------------------------------+
 | Rank | Index |     Prob    |                    Label                     |
-+------+-------+-------------+----------------------------------------------+
+|:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   3   |   0.999998  |             Speed limit (60km/h)             |
-|  2   |   5   | 2.17723e-06 |             Speed limit (80km/h)             |
-|  3   |   2   | 2.00031e-08 |             Speed limit (50km/h)             |
-|  4   |   10  |  1.6189e-24 | No passing for vehicles over 3.5 metric tons |
-|  5   |   6   | 3.62349e-28 |         End of speed limit (80km/h)          |
-+------+-------+-------------+----------------------------------------------+
+|  2   |   5   | 2.17723e 06 |             Speed limit (80km/h)             |
+|  3   |   2   | 2.00031e 08 |             Speed limit (50km/h)             |
+|  4   |   10  |  1.6189e 24 | No passing for vehicles over 3.5 metric tons |
+|  5   |   6   | 3.62349e 28 |         End of speed limit (80km/h)          |
 
 Predicted sign: Children crossing, probability: 1.000 correct: True
-+------+-------+-------------+------------------------------+
 | Rank | Index |     Prob    |            Label             |
-+------+-------+-------------+------------------------------+
+|:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   28  |     1.0     |      Children crossing       |
-|  2   |   8   | 3.22192e-27 |    Speed limit (120km/h)     |
-|  3   |   35  | 3.61174e-28 |          Ahead only          |
-|  4   |   20  | 6.18503e-31 | Dangerous curve to the right |
-|  5   |   12  | 2.04654e-31 |        Priority road         |
-+------+-------+-------------+------------------------------+
+|  2   |   8   | 3.22192e 27 |    Speed limit (120km/h)     |
+|  3   |   35  | 3.61174e 28 |          Ahead only          |
+|  4   |   20  | 6.18503e 31 | Dangerous curve to the right |
+|  5   |   12  | 2.04654e 31 |        Priority road         |
 
 Predicted sign: No passing, probability: 1.000 correct: True
-+------+-------+------+----------------------------------------------+
 | Rank | Index | Prob |                    Label                     |
-+------+-------+------+----------------------------------------------+
+|:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   9   | 1.0  |                  No passing                  |
 |  2   |   10  | 0.0  | No passing for vehicles over 3.5 metric tons |
 |  3   |   18  | 0.0  |               General caution                |
 |  4   |   17  | 0.0  |                   No entry                   |
 |  5   |   16  | 0.0  |   Vehicles over 3.5 metric tons prohibited   |
-+------+-------+------+----------------------------------------------+
 
 Predicted sign: Yield, probability: 1.000 correct: True
-+------+-------+------+----------------------------------------------------+
 | Rank | Index | Prob |                       Label                        |
-+------+-------+------+----------------------------------------------------+
+|:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   13  | 1.0  |                       Yield                        |
 |  2   |   42  | 0.0  | End of no passing by vehicles over 3.5 metric tons |
 |  3   |   10  | 0.0  |    No passing for vehicles over 3.5 metric tons    |
 |  4   |   18  | 0.0  |                  General caution                   |
 |  5   |   17  | 0.0  |                      No entry                      |
-+------+-------+------+----------------------------------------------------+
 
 Predicted sign: Speed limit (70km/h), probability: 1.000 correct: True
-+------+-------+-------------+---------------------------------------+
 | Rank | Index |     Prob    |                 Label                 |
-+------+-------+-------------+---------------------------------------+
+|:----:|:-----:|:----:|:--------------------------------------------------:|
 |  1   |   4   |     1.0     |          Speed limit (70km/h)         |
-|  2   |   1   | 1.36683e-33 |          Speed limit (30km/h)         |
-|  3   |   0   |  4.3787e-34 |          Speed limit (20km/h)         |
-|  4   |   11  |     0.0     | Right-of-way at the next intersection |
+|  2   |   1   | 1.36683e 33 |          Speed limit (30km/h)         |
+|  3   |   0   |  4.3787e 34 |          Speed limit (20km/h)         |
+|  4   |   11  |     0.0     | Right of way at the next intersection |
 |  5   |   18  |     0.0     |            General caution            |
-+------+-------+-------------+---------------------------------------+
 
 
