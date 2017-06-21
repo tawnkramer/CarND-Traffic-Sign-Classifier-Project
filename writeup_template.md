@@ -39,7 +39,7 @@ signs data set:
 * The size of training set is 34799 images.
 * The size of the validation set is 4410 images.
 * The size of test set is 12630 images.
-* The shape of a traffic sign image is 32x32 pixels.
+* The shape of a traffic sign image is 32x32x3 pixels.
 * The number of unique classes/labels in the data set is 43 classes.
 
 ####2. Include an exploratory visualization of the dataset.
@@ -174,7 +174,9 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 7 of the 7 traffic signs, which gives an accuracy of 100%. Originally, the test images were cropped too closely and resulted in reduced accuracy of 57%. Once cropping changed to more closely match the test set, the network performed flawlessly on the small sample set.
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability.
+
+In almost all cases, the model was very nearly 100% sure it had made the correct prediction. The other models included in the top 5 of the softmax usually had some similar traits to the correct answer.
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
